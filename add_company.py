@@ -57,13 +57,13 @@ def add_new_company(category,
                     alts_links
                     ):
 
-    
+
     with open('README.md', 'r', encoding='utf-8') as f:
         all = f.readlines()
 
     table_start = '|Category|Company|Description|GitHub Stars|Alternative to|\n'
     table_end = '<!-- END STARTUP LIST -->\n'
-    
+
     idx = all.index(table_start)
     idx_end = all.index(table_end)
 
@@ -93,7 +93,7 @@ def add_new_company(category,
 
 if __name__ == '__main__':
     count = 0
-    args = dict()
+    args = {}
 
     while True:
         if count == 0:
